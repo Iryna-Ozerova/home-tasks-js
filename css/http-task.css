@@ -1,0 +1,62 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  margin: 50px auto;
+  width: 700px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.post-list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 50px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.post-index {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: lightgreen;
+}
+
+.post-title {
+  margin: 0;
+}
+
+/*Цей CSS-код використовується для обрізання багаторядкового тексту з трьома крапками (...), якщо він виходить за межі блоку.*/
+.post-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Обрізає текст після 2 рядків */
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.post-link {
+  text-align: center;
+  color: cornflowerblue;
+}
